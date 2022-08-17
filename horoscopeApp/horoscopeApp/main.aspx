@@ -30,13 +30,13 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">About Me</a>
+                    <a href="https://www.justintruong.studio/index.html" class="nav-link">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="https://www.justintruong.studio/projects.html" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="cv.html" class="nav-link">CV</a>
+                    <a href="https://www.justintruong.studio/cv.html" class="nav-link">CV</a>
                 </li>
             </ul>
         </div>
@@ -76,7 +76,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
        
 
 <!--Example picture of stock app-->
-    <section id="learn" class="p-5 bg">
+    <section class="p-5 bg">
         <div class="container">
             <div class="d-sm-flex row align-items-center justify-content-between">
                 <!-- <div class="row">
@@ -99,9 +99,21 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                                 <asp:ListItem>Select zodiac sign</asp:ListItem>
                                 <asp:ListItem>Aries</asp:ListItem>
                                 <asp:ListItem>Taurus</asp:ListItem>
+                                <asp:ListItem>Gemini</asp:ListItem>
+                                <asp:ListItem>Cancer</asp:ListItem>
+                                <asp:ListItem>Leo</asp:ListItem>
+                                <asp:ListItem>Virgo</asp:ListItem>
+                                <asp:ListItem>Libra</asp:ListItem>
+                                <asp:ListItem>Scorpio</asp:ListItem>
+                                <asp:ListItem>Sagittarius</asp:ListItem>
+                                <asp:ListItem>Capricorn</asp:ListItem>
+                                <asp:ListItem>Aquarius</asp:ListItem>
+                                <asp:ListItem>Pisces</asp:ListItem>
                             </asp:DropDownList>
                             <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal" CellPadding="8" ForeColor="White">
-                                <asp:ListItem Selected="True">Daily</asp:ListItem>
+                                <asp:ListItem>Yesterday</asp:ListItem>
+                                <asp:ListItem Selected="True">Today</asp:ListItem>
+                                <asp:ListItem>Tomorrow</asp:ListItem>
                                 <asp:ListItem>Weekly</asp:ListItem>
                                 <asp:ListItem>Monthly</asp:ListItem>
                             </asp:RadioButtonList>
@@ -118,7 +130,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
     </section>
 
     <!--Project information-->
-    <section id="learn" class="p-5 bg-dark text-light">
+    <section class="p-5 bg-dark text-light">
         
         <div class="container">
             <div class="d-sm-flex row align-items-center justify-content-between">
