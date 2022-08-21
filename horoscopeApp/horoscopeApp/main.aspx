@@ -110,7 +110,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                                 <asp:ListItem>Aquarius</asp:ListItem>
                                 <asp:ListItem>Pisces</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal" CellPadding="8" ForeColor="White">
+                            <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal" CellPadding="4" ForeColor="White" AutoPostBack="True">
                                 <asp:ListItem>Yesterday</asp:ListItem>
                                 <asp:ListItem Selected="True">Today</asp:ListItem>
                                 <asp:ListItem>Tomorrow</asp:ListItem>
@@ -119,8 +119,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                             </asp:RadioButtonList>
                            
                             
-                        <p runat="server" id="paragraph" class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, consequatur. Nobis exercitationem velit, 
-                        tempora soluta atque fugiat consectetur recusandae, officiis perspiciatis error, explicabo expedita ratione accusamus illum dicta. Tempora, magnam?</p>
+                        <p runat="server" id="paragraph" class="text-light mt-3">(Select your zodiac sign from the dropdown menu, and select a timeframe to view your horoscope)</p>
                         </div>
                     
                     </div>
