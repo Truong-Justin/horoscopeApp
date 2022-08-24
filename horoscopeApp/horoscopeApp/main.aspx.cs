@@ -17,10 +17,11 @@ namespace horoscopeApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (DropDownList1.SelectedIndex != 0)
+            //If this is the first time the webpage is rendered, do nothing;
+            //Otherwise, return the horoscope data
+            if (IsPostBack)
             {
                 string url = logic.GetUrl(RadioButtonList1.SelectedValue, DropDownList1.SelectedValue);
-                paragraph.InnerText = url;
                 var api = logic.GetData(url);
                 paragraph.InnerText = (string)api["data"];
             }

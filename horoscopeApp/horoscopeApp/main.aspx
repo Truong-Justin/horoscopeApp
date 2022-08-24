@@ -75,16 +75,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
     </section>
        
 
-<!--Example picture of stock app-->
+<!--Horoscope App GUI -->
     <section class="p-5 bg">
         <div class="container">
             <div class="d-sm-flex row align-items-center justify-content-between">
-                <!-- <div class="row">
-                <div class="col-md">
-                    <img src="images/horoscopeAPI.png" class="img-fluid" alt="Stock App Image">
-                        
-                </div>
-                </div> -->
                 
                     <div class="row" id="border">
                         <img class="w-25 mx-auto d-none d-sm-block my-2" src="images/moon.png">
@@ -138,9 +132,9 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     <h2 style="text-decoration-line:underline; text-decoration-color:slategray"><span class=text-warning>Features</span> and Highlights</h2>
                     <ul>
                         <li class="text-light">Back-end interfaces with Horoscope.com website and returns the horoscope data</li>
-                        <li class="text-light">Front-end displays horoscope based on zodiac sign/animal and chosen day</li>
-                        <li class="text-light">Horoscope data is useable by user without the need for a database</li>
-                        <li class="text-light">Hosted on Amazon's Elastic Beanstalk</li>
+                        <li class="text-light">Front-end displays horoscope based on zodiac sign/animal and chosen timeframe</li>
+                        <li class="text-light">Horoscope data is viewable by user without the need for a database</li>
+                        <li class="text-light">API is Hosted on Amazon's Elastic Beanstalk, Front-Facing App is hosted on Microsoft Azure</li>
 
                     </ul>
                     
@@ -151,34 +145,12 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 </p>
 
                 <h2 id="project_descriptions"><span class=text-warning>What</span> I Learned</h2>
-                <p class="text-light">While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
-                   Yahoo! Finance website. I also got experience with using the built-in functions to plot the interactive candlestick chart using the Plotly graphing library. From there,
-                   I learned how to plot multiple subplots on a single page instead of relying on just the single candlestick chart. I chose to make a MACD(Moving Average Cross Divergence) subplot, a volume
-                   subplot, and also an RSI(Relative Strength Index) subplot. I came across a few different ways of calculating the RSI and MACD values, and decided to use the <a href="https://technical-analysis-library-in-python.readthedocs.io/en/latest/#" 
-                   target="_blank" rel="noopener noreferrer">Technical Analysis library</a> to derive the values I needed. Using the Dash framework, I learned how to use a callback function to change the value of the stock choice used to output the graphs, indicators, 
-                   and the support and resistance values. Finally, I deployed the working application using Microsoft Azure and Github for version control. 
+                <p class="text-light">While working on this project I learned: how to use the BeautifulSoup library to scrape data from the horoscope website, how to use Flask-Restx to 
+                    return the horoscope data in a JSON format, and how to access the data via the API endpoint. 
                 </p>
-
-                
-
-                <h2 id="project_descriptions"><span class=text-warning>References</span> and Sources</h2>
-                <p class="text-light"></p>
-                <ul>
-                    <li class="text-light"><u>Ashutosh Krishna</u> and his <a href="https://www.freecodecamp.org/news/python-project-build-an-api-with-beautiful-soup-and-flask/" 
-                        target="_blank" 
-                        rel="noopener noreferrer">freeCodeCamp tutorial</a></li>
-
-                    <li class="text-light"><u>Flask-RestX</u><a href="https://pypi.org/project/yfinance/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"> documentation</a></li>
-
-                    </ul>
-                </ul>
                 </div>
-                
             </div>
         </div>
-
     </section>
 
     </form>
