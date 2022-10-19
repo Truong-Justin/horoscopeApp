@@ -19,14 +19,14 @@ namespace horoscopeApp
             var request = WebRequest.Create(url);
             request.Method = "GET";
 
-            //GetResponse() method returns a WebResponse
+            //GetResponse() method returns a webResponse object
             //that contains the response from Internet resource;
-            //GetResponseStream() method returns the body of the response
+            //GetResponseStream() method returns a webStream object
+            //that has the body of the response;
             var webResponse = request.GetResponse();
             var webStream = webResponse.GetResponseStream();
 
-            //make StreamReader object using the webstream
-            //named reader;
+            //make reader object object using the StreamReader class;
             //reader object reads the webstream and
             //saves data in data variable
             var reader = new StreamReader(webStream);
@@ -41,9 +41,9 @@ namespace horoscopeApp
         public static string GetUrl(string day, string sign)
         {
             //url strings are used to build the correct url endpoint using String.Format()
-            string daily = "https://horoscopeapi.justintruong.studio/api/get-horoscope/daily?sign={0}&day={1}";
-            string weekly = "https://horoscopeapi.justintruong.studio/api/get-horoscope/weekly?sign={0}";
-            string monthly = "https://horoscopeapi.justintruong.studio/api/get-horoscope/monthly?sign={0}";
+            string daily = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/daily?sign={0}&day={1}";
+            string weekly = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/weekly?sign={0}";
+            string monthly = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/monthly?sign={0}";
 
             //specific endpoint is mapped to user's selection and returned
             var dict = new Dictionary<(string, string), string>

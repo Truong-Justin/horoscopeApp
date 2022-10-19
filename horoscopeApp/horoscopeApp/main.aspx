@@ -50,16 +50,22 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
             <div class="py-5">
                 <h1><span class="text-warning">RESTful</span> Horoscope API</h1>
                 <p class="lead my-4">
-                    Developed using Python, BeautifulSoup, and the Flask-Restx framework. This application scrapes horoscope data from www.horoscope.com and returns
-                    it in a JSON format. 
+                    This application returns a person's horoscope based on their sign and consists of two components. The first is a REST API made with Python, Flask-Restx, and BeautifulSoup that scrapes the www.horoscope.com website 
+                    for horoscope data and returns it in JSON format. The second component is a web application that gets it's data from the REST API that is written in C# using the ASP.Net 
+                    framework, HTML/CSS, and the Bootstrap 5 framework. 
                 </p>
                 <a href="https://horoscopeapi.justintruong.studio" class="btn btn-warning btn-lg" target="_blank" 
                 rel="noopener noreferrer">
                     View the api
                 </a>
-                <a href="https://github.com/Truong-Justin/horoscopeApi" class="btn btn-warning btn-lg my-4" target="_blank" 
+                <a href="https://github.com/Truong-Justin/horoscopeApi" class="btn btn-secondary btn-lg my-4" target="_blank" 
                 rel="noopener noreferrer">
-                    Click here for code
+                    Click here for API Code
+                </a>
+                
+                <a href="https://github.com/Truong-Justin/horoscopeApp" class="btn btn-light btn-lg my-4" target="_blank" 
+                rel="noopener noreferrer">
+                    Click here for App Code
                 </a>
                 
 
@@ -137,16 +143,23 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                         <li class="text-light">API is Hosted on Amazon's Elastic Beanstalk, Front-Facing App is hosted on Microsoft Azure</li>
 
                     </ul>
+
+                <h2 id="project_descriptions"><span class=text-warning>Motivations</span> For Project</h2>
+                <p class="text-light">When I started this project, I was also introduced to HTML/CSS and the Bootstrap 5 framework and wanted to practice my skills with front-end technologies. 
+                    After getting some experience consuming APIs with past projects, I wanted to try and make my own API and make a front-end application that consumed from it. 
+                    
+                </p>
                     
                 
                 <h2 id="project_descriptions"><span class=text-warning>Why</span> I Built This Project</h2>
-                <p class="text-light">Webscraping and APIs have been two domains that I've been curious about and wanted to dive into for a project. Python's BeautifulSoup and Flask libraries made the process a breeze
+                <p class="text-light">Webscraping and APIs have been two domains that I've been curious about and wanted to dive into for a project. Python's BeautifulSoup and Flask libraries made the process easy to understand
                     for the API portion of this project. To process the API endpoints, I used C# and the ASP.Net framework to build the user-facing portion of the project. 
                 </p>
 
                 <h2 id="project_descriptions"><span class=text-warning>What</span> I Learned</h2>
                 <p class="text-light">While working on this project I learned: how to use the BeautifulSoup library to scrape data from the horoscope website, how to use Flask-Restx to 
-                    return the horoscope data in a JSON format, and how to access the data via the API endpoint. 
+                    return the horoscope data in a JSON format, and how to access the data via the API endpoints. I was also introduced to using environment variables within a .env file that held
+                    a unique password for the API. 
                 </p>
                 </div>
             </div>
