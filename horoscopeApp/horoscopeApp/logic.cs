@@ -10,29 +10,42 @@ namespace horoscopeApp
     {
         public static JObject GetData(string endpoint)
         {
-            //make WebRequest object named request,
-            //and set Method attribute as "GET"
-            var url = endpoint;
-            var request = WebRequest.Create(url);
-            request.Method = "GET";
 
-            //GetResponse() method returns a webResponse object
-            //that contains the response from Internet resource;
-            //GetResponseStream() method returns a webStream object
-            //that has the body of the response;
-            var webResponse = request.GetResponse();
-            var webStream = webResponse.GetResponseStream();
+            try
+            {
+                //make WebRequest object named request,
+                //and set Method attribute as "GET"
+                var url = endpoint;
+                var request = WebRequest.Create(url);
+                request.Method = "GET";
 
-            //make reader object object using the StreamReader class;
-            //reader object reads the webstream and
-            //saves data in data variable
-            var reader = new StreamReader(webStream);
-            var data = reader.ReadToEnd();
+                //GetResponse() method returns a webResponse object
+                //that contains the response from Internet resource;
+                //GetResponseStream() method returns a webStream object
+                //that has the body of the response;
+                var webResponse = request.GetResponse();
+                var webStream = webResponse.GetResponseStream();
 
-            //JObject object made named api made with parsed data;
-            JObject horoscope = JObject.Parse(data);
+                //make reader object object using the StreamReader class;
+                //reader object reads the webstream and
+                //saves data in data variable
+                var reader = new StreamReader(webStream);
+                var data = reader.ReadToEnd();
 
-            return horoscope;
+                //JObject object made named horoscope made with parsed data;
+                JObject horoscope = JObject.Parse(data);
+
+                return horoscope;
+            }
+
+            catch (UriFormatException)
+            {
+
+                JObject error = new JObject();
+                error.Add("data", "(Invalid Zodiac Sign)");
+
+                return error;
+            }
         }
 
         public static string GetUrl(string day, string sign)
@@ -118,8 +131,17 @@ namespace horoscopeApp
                 {("Monthly", "Pisces"), String.Format(monthly, sign, day)}
             };
 
-            
-            return dict[(day, sign)];
+            try
+            {
+                    return dict[(day, sign)];
+            }
+
+            catch(KeyNotFoundException)
+            {
+                return "Invalid";
+            }
+
+
         }
     }
 }

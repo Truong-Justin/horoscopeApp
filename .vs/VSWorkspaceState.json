@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
     "\\horoscopeApp",
     "\\horoscopeApp\\horoscopeApp"
   ],
-  "SelectedNode": "\\horoscopeApp\\horoscopeApp\\horoscopeApp.csproj",
+  "SelectedNode": "\\horoscopeApp\\horoscopeApp\\main.aspx",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 
 
 
@@ -16,6 +17,17 @@ namespace horoscopeApp
                 string url = logic.GetUrl(RadioButtonList1.SelectedValue, DropDownList1.SelectedValue);
                 var api = logic.GetData(url);
                 paragraph.InnerText = (string)api["data"];
+            }
+
+            else
+            {
+                //Ping horoscope api to wake it up from sleep;
+                //Api is hosted on student free-tier account that 
+                //puts container to sleep after a certain amount
+                //of inactivity;
+                Ping myPing = new Ping();
+                PingReply reply = myPing.Send("129.7.81.50", 5000);
+
             }
         }
 

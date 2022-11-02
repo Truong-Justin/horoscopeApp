@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset=""UTF-8">
-<meta http-equiv=""X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+<meta charset=""UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
 rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
- crossorigin="anonymous">
-<link rel="stylesheet" href="StyleSheet1.css">
+ crossorigin="anonymous"/>
+<link rel="stylesheet" href="StyleSheet1.css"/>
 
     <title></title>
 </head>
@@ -19,7 +19,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
         <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container">
-        <a href="index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
+        <a href="https://www.justintruong.studio/index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
         <button class="navbar-toggler" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -54,7 +54,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     for horoscope data and returns it in JSON format. The second component is a web application that gets it's data from the REST API that is written in C# using the ASP.Net 
                     framework, HTML/CSS, and the Bootstrap 5 framework. 
                 </p>
-                <a href="https://horoscopeapi.justintruong.studio" class="btn btn-warning btn-lg" target="_blank" 
+                <a href="https://horoscopeapiv1.azurewebsites.net/" class="btn btn-warning btn-lg" target="_blank" 
                 rel="noopener noreferrer">
                     View the api
                 </a>
@@ -87,15 +87,15 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
             <div class="d-sm-flex row align-items-center justify-content-between">
                 
                     <div class="row" id="border">
-                        <img class="w-25 mx-auto d-none d-sm-block my-2" src="images/moon.png">
-                        <img class="w-50 mx-auto d-sm-none  my-2" src="images/moon.png">
+                        <img class="w-25 mx-auto d-none d-sm-block my-2" src="images/moon.png"/>
+                        <img class="w-50 mx-auto d-sm-none  my-2" src="images/moon.png"/>
                         
                         
                     
                         <div id="round_div" class="bg-dark mb-3">
                         <h1 class="text-center text-light mt-5"><span class="text-warning">Horoscope</span> Application</h1>
                             <asp:DropDownList ID="DropDownList1" class="btn btn-sm btn-warning my-5 text-center mx-auto d-block" 
-                                              runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                                              runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CausesValidation="True">
                                 <asp:ListItem>Select zodiac sign</asp:ListItem>
                                 <asp:ListItem>Aries</asp:ListItem>
                                 <asp:ListItem>Taurus</asp:ListItem>
