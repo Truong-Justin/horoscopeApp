@@ -22,9 +22,6 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
 
-      - name: Restore NuGet packages
-        run: nuget restore packages/packages.config -PackagesDirectory horoscopeApp/packages
-
       - name: Publish to folder
         run: msbuild horoscopeApp/horoscopeApp.sln /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
 
