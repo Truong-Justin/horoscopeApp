@@ -58,12 +58,12 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 rel="noopener noreferrer">
                     View the api
                 </a>
-                <a href="https://github.com/Truong-Justin/horoscopeApi" class="btn btn-secondary btn-lg my-4" target="_blank" 
+                <a href="https://github.com/Truong-Justin/horoscopeApi" class="btn btn-secondary btn-lg my-1" target="_blank" 
                 rel="noopener noreferrer">
                     Click here for API Code
                 </a>
                 
-                <a href="https://github.com/Truong-Justin/horoscopeApp" class="btn btn-light btn-lg my-4" target="_blank" 
+                <a href="https://github.com/Truong-Justin/horoscopeApp" class="btn btn-light btn-lg my-1" target="_blank" 
                 rel="noopener noreferrer">
                     Click here for App Code
                 </a>
@@ -137,10 +137,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 <div class="col-md">
                     <h2 style="text-decoration-line:underline; text-decoration-color:slategray"><span class=text-warning>Features</span> and Highlights</h2>
                     <ul>
-                        <li class="text-light">Back-end interfaces with Horoscope.com website and returns the horoscope data</li>
+                        <li class="text-light">Back-end scrapes data from  www.horoscope.com and returns the horoscope data</li>
                         <li class="text-light">Front-end displays horoscope based on zodiac sign/animal and chosen timeframe</li>
                         <li class="text-light">Horoscope data is viewable by user without the need for a database</li>
-                        <li class="text-light">API is Hosted on Amazon's Elastic Beanstalk, Front-Facing App is hosted on Microsoft Azure</li>
+                        <li class="text-light">API & Front-Facing App is hosted on Microsoft Azure</li>
 
                     </ul>
 
@@ -159,7 +159,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 <h2 id="project_descriptions"><span class=text-warning>What</span> I Learned</h2>
                 <p class="text-light">While working on this project I learned: how to use the BeautifulSoup library to scrape data from the horoscope website, how to use Flask-Restx to 
                     return the horoscope data in a JSON format, and how to access the data via the API endpoints. I was also introduced to using environment variables within a .env file that held
-                    a unique password for the API. 
+                    a unique password for the API.  
                 </p>
                 </div>
             </div>
