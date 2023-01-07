@@ -51,9 +51,9 @@ namespace horoscopeApp
         public static string GetUrl(string day, string sign)
         {
             //url strings are used to build the correct url endpoint using String.Format()
-            string daily = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/daily?sign={0}&day={1}";
-            string weekly = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/weekly?sign={0}";
-            string monthly = "https://horoscopeapiv1.azurewebsites.net/api/get-horoscope/monthly?sign={0}";
+            string daily = "https://horoscopeapi-v6vga.ondigitalocean.app/api/get-horoscope/daily?sign={0}&day={1}";
+            string weekly = "https://horoscopeapi-v6vga.ondigitalocean.app/api/get-horoscope/weekly?sign={0}";
+            string monthly = "https://horoscopeapi-v6vga.ondigitalocean.app/api/get-horoscope/monthly?sign={0}";
 
             //specific endpoint is mapped to user's selection and returned
             var dict = new Dictionary<(string, string), string>
