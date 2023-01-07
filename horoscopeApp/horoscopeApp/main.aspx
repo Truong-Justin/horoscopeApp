@@ -54,7 +54,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     for horoscope data and returns it in JSON format. The second component is a web application that gets it's data from the REST API that is written in C# using the ASP.Net 
                     framework, HTML/CSS, and the Bootstrap 5 framework. 
                 </p>
-                <a href="https://horoscopeapiv1.azurewebsites.net/" class="btn btn-warning btn-lg" target="_blank" 
+                <a href="https://horoscopeapi-v6vga.ondigitalocean.app" class="btn btn-warning btn-lg" target="_blank" 
                 rel="noopener noreferrer">
                     View the api
                 </a>
